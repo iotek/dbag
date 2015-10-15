@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # 
 # ▓█████▄  ▄▄▄▄    ▄▄▄        ▄████ 
 # ▒██▀ ██▌▓█████▄ ▒████▄     ██▒ ▀█▒
@@ -49,13 +49,13 @@ case $rand in
     32) quote="so I ordered a bit of jew-horn on the black market";;
     33) quote="jew-snout is suppposedly an aphrodisiac";;
     34) quote="dafuq did I just type";;
-    35) quote="well, I'm not hurting anyone. Truth be told, I've had some side-effects. I've sat for hours and hours just stroking dollar bills. I do these creepy coughs too: "my precious *cough* goldblum *cough*"";;
+    35) quote="well, I'm not hurting anyone. Truth be told, I've had some side-effects. I've sat for hours and hours just stroking dollar bills. I do these creepy coughs too: \"my precious *cough* goldblum *cough*\"";;
     36) quote="goddamnit guys";;
     37) quote="if I wanted a hairless chick, I'd go to an elementary school";;
     38) quote="the level of faggyness in this channel is disturbing. I blame ymbx";;
     39) quote="flood control is tighter than a ticks asshole";;
     40) quote="xero: master level rice";;
-    41) quote="why do we even need to buy lube? I just blow my nose on my dick. natures lube. also, if it has a "lasting smell", you need to brush your teeth more often";;
+    41) quote="why do we even need to buy lube? I just blow my nose on my dick. natures lube. also, if it has a \"lasting smell\", you need to brush your teeth more often";;
     42) quote="he is the male version of an unfuckable hag over 60";;
     43) quote="when it's flacid, it says \"AIDS\"";;
     44) quote="if you're lazy, openbsd is for you";;
@@ -65,7 +65,7 @@ case $rand in
     48) quote="surprisingly I don't like cats";;
     49) quote="I got statically compiled musl";;
     50) quote="I was at it a little harder than I should've, and I think I cut my foreskin";;
-    51) quote="lets write a \"pretty ls\". one with all the fancy colors and shit. TL;DR alias ls=\"ls --colors=auto\"";;
+    51) quote="lets write a \"pretty ls\". one with all the fancy colors and shit.";;
     52) quote="rate my neckbeard. \nRATE IT MOTHERFUCKER! \nYOUR VALIDATION IS ALL THAT MATTERS TO ME";;
     53) quote="I am boss nigger";;
     54) quote="listen rocx, \nthis is what's on the agenda for today; \njerk off, eat icecream \nno \n I haven't decided the order yet \nI might as well have done that \nthe last icecream I ate tasted like shit \nthe swiss may know how to make chocolate, but not icecream";;

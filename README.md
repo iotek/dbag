@@ -41,3 +41,13 @@
           /               \/"0                      |
          |                                          |
  ```
+
+### Installation
+* Throw `dbag` into anywhere in your `$PATH`.
+* For the fortune file:
+```
+$ strfile dbag.fort
+# cp dbag.fort /usr/share/fortunes/dbag
+# cp dbag.fort.dat /usr/share/fortunes/dbag.dat
+$ fortune dbag
+```
