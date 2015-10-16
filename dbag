@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # 
 # ▓█████▄  ▄▄▄▄    ▄▄▄        ▄████ 
 # ▒██▀ ██▌▓█████▄ ▒████▄     ██▒ ▀█▒
@@ -11,80 +11,80 @@
 #    ░     ░            ░  ░      ░ 
 #  ░            ░                   
 
-num_quotes=70
-rand=$[ ( $RANDOM % $num_quotes ) + 1 ]
+_MAX=70
+_RAND=`(od -D -N4 < /dev/urandom | tr -cd '[:digit:]'  ; echo " % $_MAX") | bc`
  
-case $rand in
-    1) quote="mort: use the man pages";;
-    2) quote="geoip /always/ lies";;
-    3) quote="only jews make you pay for the salad";;
-    4) quote="old enough to bleed, old enough to breed, old enough to pee, old enough for me. old enough to count, old enough to mount";;
-    5) quote="books are the dumbbells of pseudo-intellectuals";;
-    6) quote="nothing cures you from religion than a religious school";;
-    7) quote="why do I enjoy the smell of my own ballsack?";;
-    8) quote="aparently I did a shitty job at wiping last night and now I had to pay the price. there was a dried poop cherry attached to my butt-beard. cause it takes me 2 hours to fire up my brain. the pain of ripping it out though. I now understand the pain of tar and feathering";;
-    9) quote="not porn though";;
-    10) quote="if you pee sitting down, you're like 70% female";;
-    11) quote="we should hunt for ymbx";;
-    12) quote="your mothers asshole was raw after I was done with her.";;
-    13) quote="son, here's the difference: people care about my dick";;
-    14) quote="ISO art only art";;
-    15) quote="nope. nope. nope. not touching clowns";;
-    16) quote="goddamn I broke it";;
-    17) quote="como estas mi negro judio amigo";;
-    18) quote="xero: wtf are you talking about?";;
-    19) quote="just reichrolling a bit";;
-    20) quote="rocx: are you asexual?";;
-    21) quote="that reply\nis the reply of a man who's given up";;
-    22) quote="not too long before he's going to oregon to find bigfoot";;
-    23) quote="I've done a server side replacement for you, where h a s k e l l always gets substituted with anal";;
-    24) quote="brb /'ing wrists";;
-    25) quote="I think not. I don't want jewphilis";;
-    26) quote="said the sex shop salesman";;
-    27) quote="you wouldn't know the difference between her butthole and her elbow";;
-    28) quote="can't go from virgin to fucking a masterslutsie";;
-    29) quote="rocx: my nigga";;
-    30) quote="mein niglet";;
-    31) quote="bashism";;
-    32) quote="so I ordered a bit of jew-horn on the black market";;
-    33) quote="jew-snout is suppposedly an aphrodisiac";;
-    34) quote="dafuq did I just type";;
-    35) quote="well, I'm not hurting anyone. Truth be told, I've had some side-effects. I've sat for hours and hours just stroking dollar bills. I do these creepy coughs too: \"my precious *cough* goldblum *cough*\"";;
-    36) quote="goddamnit guys";;
-    37) quote="if I wanted a hairless chick, I'd go to an elementary school";;
-    38) quote="the level of faggyness in this channel is disturbing. I blame ymbx";;
-    39) quote="flood control is tighter than a ticks asshole";;
-    40) quote="xero: master level rice";;
-    41) quote="why do we even need to buy lube? I just blow my nose on my dick. natures lube. also, if it has a \"lasting smell\", you need to brush your teeth more often";;
-    42) quote="he is the male version of an unfuckable hag over 60";;
-    43) quote="when it's flacid, it says \"AIDS\"";;
-    44) quote="if you're lazy, openbsd is for you";;
-    45) quote="ymbx is totally gay. he's so far in the closet he's reached narnia";;
-    46) quote="dami: stop telling people to use shit software. you're basically taking a shit on unix philosophy";;
-    47) quote="I like my women like I like my wine, locked up in my dark basement";;
-    48) quote="surprisingly I don't like cats";;
-    49) quote="I got statically compiled musl";;
-    50) quote="I was at it a little harder than I should've, and I think I cut my foreskin";;
-    51) quote="lets write a \"pretty ls\". one with all the fancy colors and shit.";;
-    52) quote="rate my neckbeard. \nRATE IT MOTHERFUCKER! \nYOUR VALIDATION IS ALL THAT MATTERS TO ME";;
-    53) quote="I am boss nigger";;
-    54) quote="listen rocx, \nthis is what's on the agenda for today; \njerk off, eat icecream \nno \n I haven't decided the order yet \nI might as well have done that \nthe last icecream I ate tasted like shit \nthe swiss may know how to make chocolate, but not icecream";;
-    55) quote="PETA == #1 animal snuff video producer";;
-    56) quote="as your bro \nI give you this advice \ndon't eat chipotle";;
-    57) quote="I DON'T WANNA TALK ABOUT THIS ANYMORE FUCKING TERRORIST COMMIE BOB DYLAN";;
-    58) quote="rocx and fro in a cage \nmay the best of you win \ndon't worry \nif you're meat, fro will back away";;
-    59) quote="fro: are you hopped up on sugar again?";;
-    60) quote="rocx: have you ever considered joining the KKK?";;
-    61) quote="I ... I ... I'm reading the busybox/editors/vi.c";;
-    62) quote="thanks arch";;
-    63) quote="rocx: can entropy be reversed?";;
-    64) quote="well thank god for our tech support wizard z3bra";;
-    65) quote="we can make jmbi's grandpa's dog the masco";;
-    66) quote="just get venam out, and nuke the entire shit to pieces";;
-    67) quote="vypr, I'm not a meanie";;
-    68) quote="z3bra has a horrible habit of putting return; in his void functions";;
-    69) quote="the most weird thing I've ever done is this chick who was into butt-firsting";;
-    70) quote="what, don't you have root access to your system?";;
+case $_RAND in
+    1) _Q="mort: use the man pages";;
+    2) _Q="geoip /always/ lies";;
+    3) _Q="only jews make you pay for the salad";;
+    4) _Q="old enough to bleed, old enough to breed, old enough to pee, old enough for me. old enough to count, old enough to mount";;
+    5) _Q="books are the dumbbells of pseudo-intellectuals";;
+    6) _Q="nothing cures you from religion than a religious school";;
+    7) _Q="why do I enjoy the smell of my own ballsack?";;
+    8) _Q="aparently I did a shitty job at wiping last night and now I had to pay the price. there was a dried poop cherry attached to my butt-beard. cause it takes me 2 hours to fire up my brain. the pain of ripping it out though. I now understand the pain of tar and feathering";;
+    9) _Q="not porn though";;
+    10) _Q="if you pee sitting down, you're like 70% female";;
+    11) _Q="we should hunt for ymbx";;
+    12) _Q="your mothers asshole was raw after I was done with her.";;
+    13) _Q="son, here's the difference: people care about my dick";;
+    14) _Q="ISO art only art";;
+    15) _Q="nope. nope. nope. not touching clowns";;
+    16) _Q="goddamn I broke it";;
+    17) _Q="como estas mi negro judio amigo";;
+    18) _Q="xero: wtf are you talking about?";;
+    19) _Q="just reichrolling a bit";;
+    20) _Q="rocx: are you asexual?";;
+    21) _Q="that reply\nis the reply of a man who's given up";;
+    22) _Q="not too long before he's going to oregon to find bigfoot";;
+    23) _Q="I've done a server side replacement for you, where h a s k e l l always gets substituted with anal";;
+    24) _Q="brb /'ing wrists";;
+    25) _Q="I think not. I don't want jewphilis";;
+    26) _Q="said the sex shop salesman";;
+    27) _Q="you wouldn't know the difference between her butthole and her elbow";;
+    28) _Q="can't go from virgin to fucking a masterslutsie";;
+    29) _Q="rocx: my nigga";;
+    30) _Q="mein niglet";;
+    31) _Q="bashism";;
+    32) _Q="so I ordered a bit of jew-horn on the black market";;
+    33) _Q="jew-snout is suppposedly an aphrodisiac";;
+    34) _Q="dafuq did I just type";;
+    35) _Q="well, I'm not hurting anyone. Truth be told, I've had some side-effects. I've sat for hours and hours just stroking dollar bills. I do these creepy coughs too: \"my precious *cough* goldblum *cough*\"";;
+    36) _Q="goddamnit guys";;
+    37) _Q="if I wanted a hairless chick, I'd go to an elementary school";;
+    38) _Q="the level of faggyness in this channel is disturbing. I blame ymbx";;
+    39) _Q="flood control is tighter than a ticks asshole";;
+    40) _Q="xero: master level rice";;
+    41) _Q="why do we even need to buy lube? I just blow my nose on my dick. natures lube. also, if it has a \"lasting smell\", you need to brush your teeth more often";;
+    42) _Q="he is the male version of an unfuckable hag over 60";;
+    43) _Q="when it's flacid, it says \"AIDS\"";;
+    44) _Q="if you're lazy, openbsd is for you";;
+    45) _Q="ymbx is totally gay. he's so far in the closet he's reached narnia";;
+    46) _Q="dami: stop telling people to use shit software. you're basically taking a shit on unix philosophy";;
+    47) _Q="I like my women like I like my wine, locked up in my dark basement";;
+    48) _Q="surprisingly I don't like cats";;
+    49) _Q="I got statically compiled musl";;
+    50) _Q="I was at it a little harder than I should've, and I think I cut my foreskin";;
+    51) _Q="lets write a \"pretty ls\". one with all the fancy colors and shit.";;
+    52) _Q="rate my neckbeard. \nRATE IT MOTHERFUCKER! \nYOUR VALIDATION IS ALL THAT MATTERS TO ME";;
+    53) _Q="I am boss nigger";;
+    54) _Q="listen rocx, \nthis is what's on the agenda for today; \njerk off, eat icecream \nno \nI haven't decided the order yet \nI might as well have done that \nthe last icecream I ate tasted like shit \nthe swiss may know how to make chocolate, but not icecream";;
+    55) _Q="PETA == #1 animal snuff video producer";;
+    56) _Q="as your bro \nI give you this advice \ndon't eat chipotle";;
+    57) _Q="I DON'T WANNA TALK ABOUT THIS ANYMORE FUCKING TERRORIST COMMIE BOB DYLAN";;
+    58) _Q="rocx and fro in a cage \nmay the best of you win \ndon't worry \nif you're meat, fro will back away";;
+    59) _Q="fro: are you hopped up on sugar again?";;
+    60) _Q="rocx: have you ever considered joining the KKK?";;
+    61) _Q="I ... I ... I'm reading the busybox/editors/vi.c";;
+    62) _Q="thanks arch";;
+    63) _Q="rocx: can entropy be reversed?";;
+    64) _Q="well thank god for our tech support wizard z3bra";;
+    65) _Q="we can make jmbi's grandpa's dog the masco";;
+    66) _Q="just get venam out, and nuke the entire shit to pieces";;
+    67) _Q="vypr, I'm not a meanie";;
+    68) _Q="z3bra has a horrible habit of putting return; in his void functions";;
+    69) _Q="the most weird thing I've ever done is this chick who was into butt-firsting";;
+    70) _Q="what, don't you have root access to your system?";;
 esac
 
-printf '%b\n' "$quote" | fmt -80
+printf '%b\n' "$_Q" | fmt -80
