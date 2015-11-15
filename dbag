@@ -85,8 +85,8 @@ case $_RAND in
     68) _Q="z3bra has a horrible habit of putting return; in his void functions";;
     69) _Q="the most weird thing I've ever done is this chick who was into butt-firsting";;
     70) _Q="what, don't you have root access to your system?";;
-    71) _Q="if you care what another guy is wearing, you're like 87% gay"
-    72) _Q="the only acceptable reason to fuck a clean shaven pussy is pedo or chemo"
+    71) _Q="if you care what another guy is wearing, you're like 87% gay";;
+    72) _Q="the only acceptable reason to fuck a clean shaven pussy is pedo or chemo";;
 esac
 
 printf '%b\n' "$_Q" | fmt -80
