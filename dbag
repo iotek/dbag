@@ -11,7 +11,7 @@
 #    ░     ░            ░  ░      ░ 
 #  ░            ░                   
 
-_MAX=72
+_MAX=73
 _RAND=`(od -D -N4 < /dev/urandom | tr -cd '[:digit:]'  ; echo " % $_MAX") | bc`
  
 case $_RAND in
@@ -87,6 +87,7 @@ case $_RAND in
     70) _Q="what, don't you have root access to your system?";;
     71) _Q="if you care what another guy is wearing, you're like 87% gay";;
     72) _Q="the only acceptable reason to fuck a clean shaven pussy is pedo or chemo";;
+    73) _Q="my shits are as reliable as german trains";;
 esac
 
 printf '%b\n' "$_Q" | fmt -80
