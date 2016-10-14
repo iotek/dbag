@@ -11,9 +11,9 @@
 #    ░     ░            ░  ░      ░ 
 #  ░            ░                   
 
-_MAX=73
+_MAX=105
 _RAND=`(od -D -N4 < /dev/urandom | tr -cd '[:digit:]'  ; echo " % $_MAX") | bc`
- 
+
 case $_RAND in
     1) _Q="mort: use the man pages";;
     2) _Q="geoip /always/ lies";;
@@ -88,6 +88,38 @@ case $_RAND in
     71) _Q="if you care what another guy is wearing, you're like 87% gay";;
     72) _Q="the only acceptable reason to fuck a clean shaven pussy is pedo or chemo";;
     73) _Q="my shits are as reliable as german trains";;
+    74) _Q="computer science is just a international badge of \"I can take a dick up my ass for a year or two\"";;
+    75) _Q="tbh I haven't met anyone who talks about haskell who aren't a pseudo intellectual";;
+    76) _Q="every professor has a major stick up their ass";;
+    77) _Q="z3bra: it's the curse of the *nix community \neveryone takes it as a personal attack when they're told their wrong";;
+    78) _Q="int fcn() { return fcn(); } \nrecursive enough for you z3bra?";;
+    79) _Q="if I get a hold of my cousin \nI'll optimize the recursion";;
+    80) _Q="oxa: black stylesheets matter";;
+    81) _Q="and I just figured out why wifi is always so bad on android \nwpa_supplicant";;
+    82) _Q="the rule is simple; don't be an asshole";;
+    83) _Q="I was told someone was talking about C++ \nso I decided to take some time out of my day to shit all over it";;
+    84) _Q="it's like the pot of gold at the end of a faggy rainbow";;
+    85) _Q="ssh fro@buttfuckers.r.us 'mount /dev/mother'";;
+    86) _Q="put on your big girl pants and look like a grown man though";;
+    87) _Q="and use the back camera \nnone of grainy front facing camera shit \nfull quality for maximum stencil pleasure \nI wanna be able to see the remains of that egg salad sandwich you ate last thursday";;
+    88) _Q="the dcat always uses 80x24";;
+    89) _Q="they're just trying to clean up the clusterfuck that is linux \nso that you can legally put it in a car without wondering if the wheels will fly off";;
+    90) _Q="tbh what I'm most afraid of is parasites, ticks, and mosquitos";;
+    91) _Q="calm down diabeto";;
+    92) _Q="but every once in a while there's a shimmer of light in the dark hotkinkyjo-esque abyss that is github";;
+    93) _Q="anyway, it's 29˚ here \nI'm gonna go sit in the fridge or something";;
+    94) _Q="guys pls \nI live in redneckville, it takes like 2.5 secs to update the frame \nI type out these sentences before they show up on the screen";;
+    95) _Q="I was gonna try to convince you guys I had no idea who hitler is \nand that I was talking about chaplin \nbut my pizza arrived and I can't be bothered anymore";;
+    96) _Q="wow \nsounds like he hit the lottery on subhumanness";;
+    97) _Q="okay lets not start a retarded discussion on whether or not alcohol is bad \nif you got 3 brain cells, you know it's bad for you";;
+    98) _Q="like this is the kind of shit I expect to be scribbled at the 7/11 bathroom in a poor neighborhood";;
+    99) _Q="new rules guys \nfro is IRC god";;
+    100) _Q="dcattu (drone@fbi.gov) has joined #unix";;
+    101) _Q="dcat is short for mr bojangle";;
+    102) _Q="stop freaking out \nyou drank a little bit of pee \nit's not the end of the world";;
+    103) _Q="when someone says \"I hate drama\" \nthey secretly love it";;
+    104) _Q="did someone say oxygen thief?";;
+    105) _Q="yeah, nature is nice and all \nbut it lacks swaztikas";;
 esac
 
 printf '%b\n' "$_Q" | fmt -80
